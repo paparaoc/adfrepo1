@@ -1,0 +1,11 @@
+{
+	"name": "DestinationDataset_1hs",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "trgt_azuresql_con",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable"
+	}
+}
