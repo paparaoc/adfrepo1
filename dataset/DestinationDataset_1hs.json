@@ -6,6 +6,23 @@
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
-		"type": "AzureSqlTable"
+		"type": "AzureSqlTable",
+		"structure": [
+			{
+				"name": "nut_id",
+				"type": "String"
+			},
+			{
+				"name": "nut_description",
+				"type": "String"
+			},
+			{
+				"name": "nut_units",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[nuts_target]"
+		}
 	}
 }
