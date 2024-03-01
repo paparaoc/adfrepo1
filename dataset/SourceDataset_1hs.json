@@ -1,0 +1,36 @@
+{
+	"name": "SourceDataset_1hs",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "src_azstorage_con1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "nutsDim.csv",
+				"container": "con1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "nut_id",
+				"type": "String"
+			},
+			{
+				"name": "nut_description",
+				"type": "String"
+			},
+			{
+				"name": "nut_units",
+				"type": "String"
+			}
+		]
+	}
+}
