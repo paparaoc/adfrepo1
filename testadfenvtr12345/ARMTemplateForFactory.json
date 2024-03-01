@@ -63,7 +63,39 @@
 							"sink": {
 								"type": "AzureSqlSink"
 							},
-							"enableStaging": false
+							"enableStaging": false,
+							"translator": {
+								"type": "TabularTranslator",
+								"mappings": [
+									{
+										"source": {
+											"name": "nut_id",
+											"type": "String"
+										},
+										"sink": {
+											"name": "nut_id"
+										}
+									},
+									{
+										"source": {
+											"name": "nut_description",
+											"type": "String"
+										},
+										"sink": {
+											"name": "nut_description"
+										}
+									},
+									{
+										"source": {
+											"name": "nut_units",
+											"type": "String"
+										},
+										"sink": {
+											"name": "nut_units"
+										}
+									}
+								]
+							}
 						},
 						"inputs": [
 							{
